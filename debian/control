@@ -1,0 +1,17 @@
+Source: rtkit-openrc
+Section: misc
+Priority: important
+Maintainer: Uri Herrera <uri_herrera@nxos.org>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Homepage: http://nxos.org
+
+
+Package: rtkit-openrc
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, openrc, rtkit
+Conflicts: systemd, systemd-sysv
+Description: Package to add rtkit configuration for OpenRC.
+ This package will add the boot scripts to use rtkit
+ with OpenRC in Nitrux.
+

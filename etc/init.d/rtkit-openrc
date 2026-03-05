@@ -1,0 +1,10 @@
+#!/sbin/openrc-run
+
+description="Realtime Policy and Watchdog Daemon"
+command="/usr/libexec/rtkit-daemon"
+supervisor=supervise-daemon
+
+depend() {
+    need dbus
+    use logger
+}
